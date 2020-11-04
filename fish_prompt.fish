@@ -79,7 +79,7 @@ function fish_prompt
 	if [ "$HOME" = (pwd) ]
 		printf "~"
 	else
-		printf (basename (pwd))
+		printf (dirs)
 	end
 
 	printf (string join "" " (" (huggingface::repo_stargazers) ")")
