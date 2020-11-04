@@ -1,10 +1,41 @@
+set huggingface_orange f60 --bold
+
+function huggingface::current_branch
+	set_color $huggingface_orange
+	set -l current_branch (git symbolic-ref --short HEAD)
+	set -l current_remote_branch (git rev-parse --abbrev-ref --symbolic-full-name @{u})
+	echo (string join "" "(" $current_branch ") ")
+end
+
+function huggingface::line_diff
+	set -l current_diff_shortstat (git diff --shortstat)
+	set -l additions (echo "$current_diff_shortstat" | sed -nE 's/.* ([0-9]+) insertion.*/+\1/p')
+	set -l deletions (echo "$current_diff_shortstat" | sed -nE 's/.* ([0-9]+) deletion.*/-\1/p')
+
+	if test -n "$additions"; or test -n "$deletions"
+		set_color normal
+		echo "("
+		set_color 3B3
+		echo "$additions"
+		if test -n "$additions"; and test -n "$deletions"
+			set_color normal
+			echo ", "
+		end
+		set_color B33
+		echo "$deletions"
+		set_color normal
+		echo ") "
+	end
+end
+
+
 function fish_right_prompt
 	set -l is_git_repo (git rev-parse --is-inside-work-tree ^/dev/null)
-	set -l huggingface_orange f60 --bold
 
 	if test -n "$is_git_repo"
-		set_color $huggingface_orange
-		echo (string join "" "(" (git symbolic-ref --short HEAD) ") ")
+		huggingface::current_branch
+		huggingface::line_diff	
+		set_color normal
 	end
 
 	set_color normal
