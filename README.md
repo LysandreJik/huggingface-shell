@@ -18,23 +18,11 @@ $ omf theme huggingface
 * A stargazers vizualizer
 * A rad HuggingFace icon
 * Previous command status.
-
-## Screenshot
-
-<p align="center">
-<img src="https://cloud.githubusercontent.com/assets/526122/9604024/ac338638-50ac-11e5-874a-70fa9287db93.png">
-</p>
-
-## Configuration
-
-Only display the folder name:
-```
-  set -g theme_short_path yes
-```
+* Info about current git branch
 
 # License
 
-[MIT][mit] © [LysandreJik][author] et [al][contributors]
+[MIT][mit] © [LysandreJik][author]
 
 
 [mit]:            http://opensource.org/licenses/MIT
