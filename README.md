@@ -10,8 +10,18 @@
 ## Install
 
 ```fish
-$ omf theme huggingface
+$ omf install huggingface-shell
 ```
+
+## Set the theme as current theme if coming from another
+
+```fish
+$ omf theme huggingface-shell
+```
+
+## Looks
+
+![screenshot Logo](/huggingface-shell-screenshot.png)
 
 ## Features
 
