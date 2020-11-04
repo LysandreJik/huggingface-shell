@@ -21,7 +21,9 @@ $ omf theme huggingface-shell
 
 ## Looks
 
-![screenshot Logo](/huggingface-shell-screenshot.png)
+<p align="center">
+  <img src="https://github.com/LysandreJik/huggingface-shell/raw/master/huggingface-shell-screenshot.png">
+</p>
 
 ## Features
 
