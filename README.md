@@ -5,18 +5,18 @@
 </div>
 <br>
 
-> Default theme for [Oh My Fish][omf-link].
+> HuggingFace theme for [Oh My Fish][omf-link].
 
 ## Install
 
 ```fish
-$ omf theme default
+$ omf theme huggingface
 ```
 
 ## Features
 
-* All the things you need to know about Git in a glance.
-* A subtle timestamp hanging out off to the right.
+* A stargazers vizualizer
+* A rad HuggingFace icon
 * Previous command status.
 
 ## Screenshot
@@ -34,14 +34,10 @@ Only display the folder name:
 
 # License
 
-[MIT][mit] © [bpinto][author] et [al][contributors]
+[MIT][mit] © [LysandreJik][author] et [al][contributors]
 
 
 [mit]:            http://opensource.org/licenses/MIT
-[author]:         http://github.com/bpinto
-[contributors]:   https://github.com/oh-my-fish/theme-default/graphs/contributors
-[omf-link]:       https://www.github.com/fish-shell/oh-my-fish
-
-[license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
-[travis-badge]:   http://img.shields.io/travis/oh-my-fish/theme-default.svg?style=flat-square
-[travis-link]:    https://travis-ci.org/oh-my-fish/theme-default
+[author]:         http://github.com/LysandreJik
+[contributors]:   https://github.com/LysandreJik/huggingface-shell/graphs/contributors
+[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
