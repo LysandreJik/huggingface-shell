@@ -31,6 +31,7 @@ $ omf theme huggingface-shell
 * A rad HuggingFace icon
 * Previous command status.
 * Info about current git branch
+* +/- information about line diff with current remote
 
 # License
 
