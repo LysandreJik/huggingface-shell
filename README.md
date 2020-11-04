@@ -10,7 +10,7 @@
 ## Install
 
 ```fish
-$ omf install huggingface-shell
+$ omf install https://github.com/LysandreJik/huggingface-shell
 ```
 
 ## Set the theme as current theme if coming from another
