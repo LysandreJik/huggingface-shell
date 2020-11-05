@@ -3,7 +3,6 @@ set huggingface_orange f60 --bold
 function huggingface::current_branch
 	set_color $huggingface_orange
 	set -l current_branch (git symbolic-ref --short HEAD)
-	set -l current_remote_branch (git rev-parse --abbrev-ref --symbolic-full-name @{u})
 	echo (string join "" "(" $current_branch ") ")
 end
 
