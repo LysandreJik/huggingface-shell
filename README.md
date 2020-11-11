@@ -22,7 +22,7 @@ $ omf theme huggingface-shell
 ## Looks
 
 <p align="center">
-  <img src="https://github.com/LysandreJik/huggingface-shell/raw/master/huggingface-shell-screenshot.png">
+  <img src="https://github.com/LysandreJik/huggingface-shell/raw/master/huggingface-shell-gif.gif">
 </p>
 
 ## Features
