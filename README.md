@@ -9,13 +9,23 @@
 
 ## Install
 
-```fish
+### Installing fish and oh-my-fish
+
+Fish can be installed as shown [here](https://github.com/fish-shell/fish-shell#getting-fish).
+
+oh-my-fish can be installed once fish is installed on your os with
+
+```shell-script
+curl -L https://get.oh-my.fish | fish
+```
+
+```shell-script
 $ omf install https://github.com/LysandreJik/huggingface-shell
 ```
 
 ## Set the theme as current theme if coming from another
 
-```fish
+```shell-script
 $ omf theme huggingface-shell
 ```
 
@@ -27,9 +37,9 @@ $ omf theme huggingface-shell
 
 ## Features
 
+* A really cool stylized cursive Hugging Face title
 * A stargazers vizualizer
 * A rad HuggingFace icon
-* Previous command status.
 * Info about current git branch
 * +/- information about line diff with current remote
 
@@ -40,5 +50,4 @@ $ omf theme huggingface-shell
 
 [mit]:            http://opensource.org/licenses/MIT
 [author]:         http://github.com/LysandreJik
-[contributors]:   https://github.com/LysandreJik/huggingface-shell/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
