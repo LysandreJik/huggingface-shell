@@ -16,8 +16,10 @@ Fish can be installed as shown [here](https://github.com/fish-shell/fish-shell#g
 oh-my-fish can be installed once fish is installed on your os with
 
 ```shell-script
-curl -L https://get.oh-my.fish | fish
+$ curl -L https://get.oh-my.fish | fish
 ```
+
+Once oh-my-fish is installed, installing the theme can be done with the following:
 
 ```shell-script
 $ omf install https://github.com/LysandreJik/huggingface-shell
