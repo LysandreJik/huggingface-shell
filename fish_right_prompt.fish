@@ -29,7 +29,7 @@ end
 
 
 function fish_right_prompt
-	set -l is_git_repo (git rev-parse --is-inside-work-tree ^/dev/null)
+	set -l is_git_repo (git rev-parse --is-inside-work-tree 2>/dev/null)
 
 	if test -n "$is_git_repo"
 		huggingface::current_branch
