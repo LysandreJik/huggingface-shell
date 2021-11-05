@@ -5,7 +5,7 @@ end
 
 
 function huggingface::repo_stargazers
-	set -l is_git_repo (git rev-parse --is-inside-work-tree ^/dev/null)
+	set -l is_git_repo (git rev-parse --is-inside-work-tree 2>/dev/null)
 	set stargazers_found 0
 	
 	if test -n "$is_git_repo"
